@@ -19,9 +19,3 @@ class Vector2:
 
 testVector = Vector2(3,1)
 print(testVector.add(Vector2(1,2)))
-Root = tk.Tk()
-Width, Height = Root.winfo_screenwidth(), Root.winfo_screenheight()
-
-Root.geometry(f"{Width}x{Height}")
-
-Root.mainloop()
