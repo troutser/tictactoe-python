@@ -27,3 +27,14 @@ class Vector2:
         return self
     def dot(self, vec2):
         return self.x * vec2.x + self.y * vec2.y
+    
+class PhysicsObject:
+    def __init__(self, position: Vector2, velocity: Vector2, acceleration: Vector2):
+        self.position = position
+        self.velocity = velocity
+        self.acceleration = acceleration
+    def step(self, dt: float) -> PhysicsObject:
+        self.position += self.velocity
+        self.velocity += self.acceleration
+        
+        return self
