@@ -32,7 +32,7 @@ def Step():
     Physics.step(0.01)
     if Physics.position.y > ROOT_HEIGHT - RADIUS:
         Physics.position.y = ROOT_HEIGHT * 2 - RADIUS * 2 - Physics.position.y
-        Physics.velocity *= -1
+        Physics.velocity *= -0.1
 
     Canvas.coords(
         Circle, 
